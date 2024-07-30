@@ -15,11 +15,12 @@
         <p class="text-center mb-4">I got tired of the festival only providing a non searchable image of the schedule so I created this using data from Reddit user <a href="https://www.reddit.com/r/asheville/comments/1eaimxs/avl_fest_2024_schedule_data_for_you/">@EatAtDaves Post</a></p>
         <p class="text-center mb-4">And actually I created it use <a href="https://aider.chat">Aider</a> and claude-3-5-sonnet-20240620 in a few minutes ... then I got bored and went back to work. It's not perfect but I hope you find it useful. </p>
         <p class="text-center mb-4">Use the filters on the left to customize your view and find the shows you're most interested in.</p>
-        <p class="text-center mb-4">And if anyone has info on the band's home page or descriptions, that would be awesome. Please let me know <a href="mailto:Julio@E-String.com?subject=Unofficial AVLFest Schedule">Julio@E-String.com</a></p>
+        <p class="text-center mb-4">Genre data provided by Ryan Appleton of <a href="https://lazytigerhostel.com">Lazy Tiger Hostel</a>. If anyone has info on the band's home page or descriptions, that would be awesome. Please let me know <a href="mailto:Julio@E-String.com?subject=Unofficial AVLFest Schedule">Julio@E-String.com</a></p>
+        <p class="text-center mb-4">All data subject to change so check with the venue or official schedule before making plans.</p>
         <div class="row">
             <div class="col-md-3 bg-light p-3">
                 <h3>Filters</h3>
-                <div x-data="{ openVenues: false, openDates: false, openTimes: false }">
+                <div x-data="{ openVenues: false, openDates: false, openTimes: false, openGenres: false }">
                     <h4 @click="openVenues = !openVenues" class="cursor-pointer">Venues <span x-text="openVenues ? '▼' : '▶'"></span></h4>
                     <ul x-show="openVenues" x-collapse.duration.500ms class="list-unstyled">
                         <li class="mb-2">
@@ -73,6 +74,24 @@
                             </li>
                         </template>
                     </ul>
+
+                    <h4 @click="openGenres = !openGenres" class="cursor-pointer mt-3">Genres <span x-text="openGenres ? '▼' : '▶'"></span></h4>
+                    <ul x-show="openGenres" x-collapse.duration.500ms class="list-unstyled">
+                        <li class="mb-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" :checked="showAllGenres" @change="updateAllGenres" id="allGenres">
+                                <label class="form-check-label" for="allGenres">All Genres</label>
+                            </div>
+                        </li>
+                        <template x-for="genre in uniqueGenres" :key="genre">
+                            <li class="mb-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" :value="genre" x-model="filterGenres" :id="genre">
+                                    <label class="form-check-label" :for="genre" x-text="genre"></label>
+                                </div>
+                            </li>
+                        </template>
+                    </ul>
                 </div>
             </div>
             <div class="col-md-9 p-3">
@@ -115,8 +134,13 @@
                 filterVenues: [],
                 filterDates: [],
                 filterTimes: [],
+                filterGenres: [],
                 sortColumn: 'Date',
                 sortDirection: 'asc',
+
+                get uniqueGenres() {
+                    return [...new Set(this.shows.filter(show => show.Genre).map(show => show.Genre))];
+                },
 
                 get uniqueVenues() {
                     return [...new Set(this.shows.map(show => show.Venue))];
@@ -136,14 +160,16 @@
                         searchArtist: this.searchArtist,
                         filterVenues: this.filterVenues,
                         filterDates: this.filterDates,
-                        filterTimes: this.filterTimes
+                        filterTimes: this.filterTimes,
+                        filterGenres: this.filterGenres
                     });
                     const filtered = this.shows
                         .filter(show => 
                             show.Artist.toLowerCase().includes(this.searchArtist.toLowerCase()) &&
                             (this.filterVenues.length === 0 || this.filterVenues.includes(show.Venue)) &&
                             (this.filterDates.length === 0 || this.filterDates.includes(show.Date)) &&
-                            (this.filterTimes.length === 0 || this.filterTimes.includes(show.Time))
+                            (this.filterTimes.length === 0 || this.filterTimes.includes(show.Time)) &&
+                            (this.filterGenres.length === 0 || (show.Genre && this.filterGenres.includes(show.Genre)))
                         )
                         .sort((a, b) => {
                             if (a[this.sortColumn] < b[this.sortColumn]) return this.sortDirection === 'asc' ? -1 : 1;
@@ -207,6 +233,19 @@
 
                 get showAllTimes() {
                     return this.filterTimes.length === 0;
+                },
+
+                updateAllGenres() {
+                    const allGenresChecked = this.showAllGenres;
+                    if (allGenresChecked) {
+                        this.filterGenres = [];
+                    } else if (this.filterGenres.length === 0) {
+                        this.filterGenres = [...this.uniqueGenres];
+                    }
+                },
+
+                get showAllGenres() {
+                    return this.filterGenres.length === 0;
                 }
             }
         }
