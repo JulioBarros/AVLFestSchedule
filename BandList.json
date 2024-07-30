@@ -38,7 +38,7 @@
         "Artist": "ASHLEY HEATH AND HER HEATHENS",
         "Time": "6:00:00 PM",
         "Venue": "THE GREY EAGLE",
-        "Genre": "Country/Americana"
+        "Genre": "Blues"
     },
     {
         "Date": "8/1/2024",
@@ -249,7 +249,8 @@
         "Date": "8/1/2024",
         "Artist": "LYRIC",
         "Time": "9:00:00 PM",
-        "Venue": "THE FUNKATORIUM"
+      "Venue": "THE FUNKATORIUM"
+      "Genre": "Funk"
     },
     {
         "Date": "8/1/2024",
@@ -606,7 +607,8 @@
         "Date": "8/2/2024",
         "Artist": "MAGGIE VALLEY BAND",
         "Time": "3:30:00 PM",
-        "Venue": "HIGHLAND BREWING CO."
+      "Venue": "HIGHLAND BREWING CO."
+      "Genre": "Country"
     },
     {
         "Date": "8/2/2024",
@@ -1742,7 +1744,7 @@
         "Artist": "GOLD ROSE",
         "Time": "6:30:00 PM",
         "Venue": "HIGHLAND BREWING CO.",
-        "Genre": "Indie Rock"
+        "Genre": "Country"
     },
     {
         "Date": "8/3/2024",
