@@ -17,6 +17,7 @@
         <p class="text-center mb-4">Use the filters on the left to customize your view and find the shows you're most interested in.</p>
         <p class="text-center mb-4">Genre data provided by Ryan Appleton of <a href="https://lazytigerhostel.com">Lazy Tiger Hostel</a>. If anyone has info on the band's home page or descriptions, that would be awesome. Please let me know <a href="mailto:Julio@E-String.com?subject=Unofficial AVLFest Schedule">Julio@E-String.com</a></p>
         <p class="text-center mb-4">All data subject to change so check with the venue or official schedule before making plans.</p>
+        <p class="text-center mb-4">Oh and someone created <a href="https://open.spotify.com/playlist/62XybpyrzYJLniSIjbDqKR?si=zf7sX4_5Tc6ZMJ4ErVP-Ng&pi=u-_SR0JLuwTX-e&nd=1&dlsi=456050a0de3e43dd">Spotify playlist</a></p>
         <div class="row">
             <div class="col-md-3 bg-light p-3">
                 <h3>Filters</h3>
@@ -139,19 +140,19 @@
                 sortDirection: 'asc',
 
                 get uniqueGenres() {
-                    return [...new Set(this.shows.filter(show => show.Genre).map(show => show.Genre))];
+                    return [...new Set(this.shows.filter(show => show.Genre).map(show => show.Genre))].sort();
                 },
 
                 get uniqueVenues() {
-                    return [...new Set(this.shows.map(show => show.Venue))];
+                    return [...new Set(this.shows.map(show => show.Venue))].sort();
                 },
 
                 get uniqueDates() {
-                    return [...new Set(this.shows.map(show => show.Date))];
+                    return [...new Set(this.shows.map(show => show.Date))].sort();
                 },
 
                 get uniqueTimes() {
-                    return [...new Set(this.shows.map(show => show.Time))];
+                    return [...new Set(this.shows.map(show => show.Time))].sort();
                 },
 
                 get filteredAndSortedShows() {
