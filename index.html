@@ -80,23 +80,7 @@
                         </template>
                     </ul>
 
-                    <h4 @click="openGenres = !openGenres" class="cursor-pointer mt-3">Genres <span x-text="openGenres ? '▼' : '▶'"></span></h4>
-                    <ul x-show="openGenres" x-collapse.duration.500ms class="list-unstyled">
-                        <li class="mb-2">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" :checked="showAllGenres" @change="updateAllGenres" id="allGenres">
-                                <label class="form-check-label" for="allGenres">All Genres</label>
-                            </div>
-                        </li>
-                        <template x-for="genre in uniqueGenres" :key="genre">
-                            <li class="mb-2">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" :value="genre" x-model="filterGenres" :id="genre">
-                                    <label class="form-check-label" :for="genre" x-text="genre"></label>
-                                </div>
-                            </li>
-                        </template>
-                    </ul>
+               
                 </div>
             </div>
             <div class="col-md-9 p-3">
@@ -117,7 +101,7 @@
                         <template x-for="(show, index) in filteredAndSortedShows" :key="index">
                             <tr>
                                 <td x-text="show.Date"></td>
-                                <td><div x-text="show.Artist"></div><div class="fst-italic fw-light" x-text="show.Genre"></div></td>
+                                <td><div x-text="show.Artist"></div></td>
                                 <td x-text="show.Time"></td>
                                 <td x-text="show.Venue"></td>
                             </tr>
@@ -139,13 +123,10 @@
                 filterVenues: [],
                 filterDates: [],
                 filterTimes: [],
-                filterGenres: [],
                 sortColumn: 'Date',
                 sortDirection: 'asc',
 
-                get uniqueGenres() {
-                    return [...new Set(this.shows.filter(show => show.Genre).map(show => show.Genre))].sort();
-                },
+            
 
                 get uniqueVenues() {
                     return [...new Set(this.shows.map(show => show.Venue))].sort();
@@ -166,15 +147,13 @@
                         filterVenues: this.filterVenues,
                         filterDates: this.filterDates,
                         filterTimes: this.filterTimes,
-                        filterGenres: this.filterGenres
                     });
                     const filtered = this.shows
                         .filter(show => 
                             show.Artist.toLowerCase().includes(this.searchArtist.toLowerCase()) &&
                             (this.filterVenues.length === 0 || this.filterVenues.includes(show.Venue)) &&
                             (this.filterDates.length === 0 || this.filterDates.includes(show.Date)) &&
-                            (this.filterTimes.length === 0 || this.filterTimes.includes(show.Time)) &&
-                            (this.filterGenres.length === 0 || (show.Genre && this.filterGenres.includes(show.Genre)))
+                            (this.filterTimes.length === 0 || this.filterTimes.includes(show.Time))
                         )
                         .sort((a, b) => {
                             if (a[this.sortColumn] < b[this.sortColumn]) return this.sortDirection === 'asc' ? -1 : 1;
@@ -240,18 +219,7 @@
                     return this.filterTimes.length === 0;
                 },
 
-                updateAllGenres() {
-                    const allGenresChecked = this.showAllGenres;
-                    if (allGenresChecked) {
-                        this.filterGenres = [];
-                    } else if (this.filterGenres.length === 0) {
-                        this.filterGenres = [...this.uniqueGenres];
-                    }
-                },
-
-                get showAllGenres() {
-                    return this.filterGenres.length === 0;
-                }
+    
             }
         }
 
