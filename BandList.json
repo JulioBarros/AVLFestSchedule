@@ -4,96 +4,110 @@
         "Artist": "THE BIG HUNGRY",
         "Time": "6:00:00 PM",
         "Venue": "ASHEVILLE MUSIC HALL",
-        "Genre": "Indie Rock"
+        "Genre": "Indie Rock",
+        "Site": "https://thebighungryband.com"
     },
     {
         "Date": "8/1/2024",
         "Artist": "SLOW PACKER",
         "Time": "6:00:00 PM",
         "Venue": "EULOGY",
-        "Genre": "Indie Rock"
+        "Genre": "Indie Rock",
+        "Site": "https: //slowpacker.bandcamp.com/album/everything-happens-in-a-cycle"
     },
     {
         "Date": "8/1/2024",
         "Artist": "THE DEATHBOTS",
         "Time": "6:00:00 PM",
         "Venue": "FLEETWOOD'S",
-        "Genre": "Electronic/Experimental"
+        "Genre": "Electronic/Experimental",
+        "Site": "https://thedeathbots.bandcamp.com"
     },
     {
         "Date": "8/1/2024",
         "Artist": "MCKINNEY",
         "Time": "6:00:00 PM",
-        "Venue": "FRENCH BROAD RIVER BREWERY (Indoors)"
+        "Venue": "FRENCH BROAD RIVER BREWERY (Indoors)",
+        "Site": "https://melissamckinneymusic.com"
     },
     {
         "Date": "8/1/2024",
         "Artist": "TINA & HER PONY",
         "Time": "6:00:00 PM",
         "Venue": "THE FUNKATORIUM",
-        "Genre": "Indie Folk"
+        "Genre": "Indie Folk",
+        "Site": "http://tinaandherpony.com"
     },
     {
         "Date": "8/1/2024",
         "Artist": "ASHLEY HEATH AND HER HEATHENS",
         "Time": "6:00:00 PM",
         "Venue": "THE GREY EAGLE",
-        "Genre": "Blues"
+        "Genre": "Blues",
+        "Site": "https://ashleyleeannheath.com"
     },
     {
         "Date": "8/1/2024",
         "Artist": "THE LONG DISTANCE RELATIONSHIP",
         "Time": "6:00:00 PM",
         "Venue": "HIGHLAND BREWING CO.",
-        "Genre": "Indie Rock"
+        "Genre": "Indie Rock",
+        "Site": "https://thelongdistancerelationship.bandcamp.com"
     },
     {
         "Date": "8/1/2024",
         "Artist": "MAGENTA SUNSHINE",
         "Time": "6:00:00 PM",
-        "Venue": "ONE WORLD BREWING"
+        "Venue": "ONE WORLD BREWING",
+        "Site": "https://magentasunshine.com"
     },
     {
         "Date": "8/1/2024",
         "Artist": "FRESH BUZZ",
         "Time": "6:00:00 PM",
         "Venue": "SALVAGE STATION (indoors)",
-        "Genre": "Electronic/Dance"
+        "Genre": "Electronic/Dance",
+        "Site": "https://www.facebook.com/FreshBuzzband/"
     },
     {
         "Date": "8/1/2024",
         "Artist": "DIRTY DEAD",
         "Time": "6:00:00 PM",
         "Venue": "SHILOH & GAINES",
-        "Genre": "Indie Rock"
+        "Genre": "Indie Rock",
+        "Site": "https://www.facebook.com/dirtydeadband/"
     },
     {
         "Date": "8/1/2024",
         "Artist": "MIRIAM ALLEN",
         "Time": "6:00:00 PM",
         "Venue": "SOVEREIGN KAVA",
-        "Genre": "Singer-Songwriter/Folk"
+        "Genre": "Singer-Songwriter/Folk",
+        "Site": "https://www.miriamallen.net"
     },
     {
         "Date": "8/1/2024",
         "Artist": "SUNBEARER",
         "Time": "6:00:00 PM",
         "Venue": "THE ODD",
-        "Genre": "Electronic/Experimental"
+        "Genre": "Electronic/Experimental",
+        "Site": "https://sunbearerdoom.bandcamp.com"
     },
     {
         "Date": "8/1/2024",
         "Artist": "JUSTIN WELLS",
         "Time": "6:00:00 PM",
         "Venue": "THE OUTPOST",
-        "Genre": "Country/Americana"
+        "Genre": "Country/Americana",
+        "Site": "https://linktr.ee/justinwellsmusic"
     },
     {
         "Date": "8/1/2024",
         "Artist": "THE Z-MAN EXPERIENCE",
         "Time": "6:00:00 PM",
         "Venue": "THE SOCIAL",
-        "Genre": "Electronic/Experimental"
+        "Genre": "Electronic/Experimental",
+        "Site": "https://thezmanexperience.com"
     },
     {
         "Date": "8/1/2024",
@@ -106,14 +120,16 @@
         "Artist": "FANCY & THE GENTLEMEN",
         "Time": "6:00:00 PM",
         "Venue": "WORTHAM CENTER FOR THE PERFORMING ARTS",
-        "Genre": "Indie Rock"
+        "Genre": "Indie Rock",
+        "Site": "https://www.fancyandthegentlemen.com"
     },
     {
         "Date": "8/1/2024",
         "Artist": "PAPER CROWNS DUO",
         "Time": "6:30:00 PM",
         "Venue": "THE ONE STOP",
-        "Genre": "Indie Folk"
+        "Genre": "Indie Folk",
+        "Site": "https://www.thepapercrowns.com"
     },
     {
         "Date": "8/1/2024",
@@ -249,7 +265,7 @@
         "Date": "8/1/2024",
         "Artist": "LYRIC",
         "Time": "9:00:00 PM",
-      "Venue": "THE FUNKATORIUM"
+      "Venue": "THE FUNKATORIUM",
       "Genre": "Funk"
     },
     {
@@ -361,13 +377,6 @@
         "Time": "10:30:00 PM",
         "Venue": "FLEETWOOD'S",
         "Genre": "Indie Rock"
-    },
-    {
-        "Date": "8/1/2024",
-        "Artist": "DJ MOLLY PARTI",
-        "Time": "10:30:00 PM",
-        "Venue": "FRENCH BROAD RIVER BREWERY (Indoors)",
-        "Genre": "Electronic/Dance"
     },
     {
         "Date": "8/1/2024",
@@ -607,7 +616,7 @@
         "Date": "8/2/2024",
         "Artist": "MAGGIE VALLEY BAND",
         "Time": "3:30:00 PM",
-      "Venue": "HIGHLAND BREWING CO."
+      "Venue": "HIGHLAND BREWING CO.",
       "Genre": "Country"
     },
     {
