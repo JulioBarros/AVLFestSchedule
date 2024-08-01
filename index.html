@@ -51,10 +51,10 @@
         <a href="https://lazytigerhostel.com">Lazy Tiger Hostel</a> for kicking
         it off.
       </p>
-      <p class="text-center mb-4">
+      <h2 class="text-center mb-4">
         All data subject to error and change so check with the venue or official
         schedule before making plans.
-      </p>
+      </h2>
       <p class="text-center mb-4">
         If you have changes, updates or more info on the band's genre, home page
         or descriptions, that would be awesome. Please let me know
@@ -230,8 +230,17 @@
               >
                 <tr>
                   <td x-text="show.Date"></td>
-                  <td><div x-text="show.Artist"></div>
-                    <div><a x-text="show.Site" x-bind:href="show.Site" x-text="show.Site" target="_blank"></a></div></td>
+                  <td>
+                    <div x-text="show.Artist"></div>
+                    <div>
+                      <a
+                        x-text="show.Site"
+                        x-bind:href="show.Site"
+                        x-text="show.Site"
+                        target="_blank"
+                      ></a>
+                    </div>
+                  </td>
                   <td x-text="show.Time"></td>
                   <td x-text="show.Venue"></td>
                 </tr>
@@ -361,2221 +370,2570 @@
         };
       }
 
-          let bandList = [
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "The Big Hungry",
-    "Venue": "Asheville Music Hall",
-    "Site": "https://thebighungryband.com"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "Slow Packer",
-    "Venue": "Eulogy",
-    "Site": "https: //slowpacker.bandcamp.com/album/everything-happens-in-a-cycle"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "The Deathbots",
-    "Venue": "Fleetwood's",
-    "Site": "https://thedeathbots.bandcamp.com"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "McKinney",
-    "Venue": "French Broad River Brewery (Indoors)",
-    "Site": "https://melissamckinneymusic.com"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "Tina & Her Pony",
-    "Venue": "The Funkatorium",
-    "Site": "http://tinaandherpony.com"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "Ashley Heath",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "The Long Distance Relationship",
-    "Venue": "Highland Brewing Co.",
-    "Site": "https://thelongdistancerelationship.bandcamp.com"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "Magenta Sunshine",
-    "Venue": "One World Brewing",
-    "Site": "https://magentasunshine.com"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "Fresh Buzz",
-    "Venue": "Salvage Station (indoors)",
-    "Site": "https://www.facebook.com/FreshBuzzband/"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "Dirty Dead",
-    "Venue": "Shiloh & Gaines",
-    "Site": "https://www.facebook.com/dirtydeadband/"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "Miriam Allen",
-    "Venue": "Sovereign Kava",
-    "Site": "https://www.miriamallen.net"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "Sunbearer",
-    "Venue": "The Odd",
-    "Site": "https://sunbearerdoom.bandcamp.com"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "Justin Wells",
-    "Venue": "The Outpost",
-    "Site": "https://linktr.ee/justinwellsmusic"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "The Z-Man Experience",
-    "Venue": "The Social",
-    "Site": "https://thezmanexperience.com"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "@",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "Fancy & The Gentlemen",
-    "Venue": "Wortham Center for the Performing Arts",
-    "Site": "https://www.fancyandthegentlemen.com"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:30 PM",
-    "Artist": "Paper Crowns Duo",
-    "Venue": "The One Stop",
-    "Site": "https://www.thepapercrowns.com"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "06:00 PM",
-    "Artist": "DJ Molly Parti",
-    "Venue": "New Belgium Brewing (Beer Garden)"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "07:00 PM",
-    "Artist": "Drew Matulich Bluegrass Jam",
-    "Venue": "Jack of the Wood"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "07:15 PM",
-    "Artist": "Amanda Anne Platt &\u00a0The\u00a0Honeycutters",
-    "Venue": "The Outpost"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "07:30 PM",
-    "Artist": "The Feels",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "07:30 PM",
-    "Artist": "Sounding Arrow",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "07:30 PM",
-    "Artist": "Lonnie Walker",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "07:30 PM",
-    "Artist": "Joshua Carpenter",
-    "Venue": "French Broad River Brewery (Indoors)"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "07:30 PM",
-    "Artist": "Emanuel Wynter",
-    "Venue": "The Funkatorium"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "07:30 PM",
-    "Artist": "Mama & the Ruckus",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "07:30 PM",
-    "Artist": "Pick Your Switch",
-    "Venue": "Highland Brewing Co."
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "07:30 PM",
-    "Artist": "Kid Billy",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "07:30 PM",
-    "Artist": "Random Animals",
-    "Venue": "Salvage Station (indoors)"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "07:30 PM",
-    "Artist": "Whitney Monge",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "07:30 PM",
-    "Artist": "Temptation's Wings",
-    "Venue": "The Odd"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "07:30 PM",
-    "Artist": "Eaze Dogg",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "07:30 PM",
-    "Artist": "Ashes & Arrows",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "07:30 PM",
-    "Artist": "Unspoken Tradition",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "08:00 PM",
-    "Artist": "Peter Townsend",
-    "Venue": "The One Stop"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "08:45 PM",
-    "Artist": "SG Goodman",
-    "Venue": "The Outpost"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "09:00 PM",
-    "Artist": "Spiro Nicolopolus Blues Apocalypse!",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "09:00 PM",
-    "Artist": "Santiago y Los Gatos",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "09:00 PM",
-    "Artist": "Monster Wave",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "09:00 PM",
-    "Artist": "Goldie & the Screamers",
-    "Venue": "French Broad River Brewery (Indoors)"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "09:00 PM",
-    "Artist": "The Bins",
-    "Venue": "The Funkatorium"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "09:00 PM",
-    "Artist": "Red Clay Revivial",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "09:00 PM",
-    "Artist": "Hearts Gone South",
-    "Venue": "Highland Brewing Co."
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "09:00 PM",
-    "Artist": "The Dancing Fleas",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "09:00 PM",
-    "Artist": "Boulevards",
-    "Venue": "Salvage Station (indoors)"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "09:00 PM",
-    "Artist": "Pierce Edens",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "09:00 PM",
-    "Artist": "US Christmas",
-    "Venue": "The Odd"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "09:00 PM",
-    "Artist": "40 Boyz",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "09:00 PM",
-    "Artist": "Victoria Victoria",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "09:00 PM",
-    "Artist": "The Jon Henrys",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "09:30 PM",
-    "Artist": "Jack of the Wood Bluegrass Open Jam",
-    "Venue": "Jack of the Wood"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "10:00 PM",
-    "Artist": "Fee Fi Phaux Fish",
-    "Venue": "The One Stop"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "10:30 PM",
-    "Artist": "In Flight",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "10:30 PM",
-    "Artist": "Cpt. Hyperdrive",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "10:30 PM",
-    "Artist": "Jesus Casino",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "10:30 PM",
-    "Artist": "Isaac Hadden Organ Trio",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "10:30 PM",
-    "Artist": "Shed Bugs",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "10:30 PM",
-    "Artist": "The Billy Sea",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "10:30 PM",
-    "Artist": "Shadowcloak",
-    "Venue": "The Odd"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "10:30 PM",
-    "Artist": "Peter the Poet",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "10:45 PM",
-    "Artist": "Joslyn & the Sweet Compression",
-    "Venue": "Salvage Station (indoors)"
-  },
-  {
-    "Date": "8/1/2024",
-    "Time": "10:45 PM",
-    "Artist": "Jessica Pratt",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "01:30 PM",
-    "Artist": "Liner Notes: Curated Conversations w/AVLFest Artists",
-    "Venue": "Citizen Vinyl"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "02:00 PM",
-    "Artist": "Lavender Blue",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "02:00 PM",
-    "Artist": "Polly Panic",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "02:00 PM",
-    "Artist": "Rond",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "02:00 PM",
-    "Artist": "Boat Command",
-    "Venue": "French Broad River Brewery (Indoors)"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "02:00 PM",
-    "Artist": "Vince Junior Band",
-    "Venue": "Highland Brewing Co."
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "02:00 PM",
-    "Artist": "Aaron Lane",
-    "Venue": "Jack of the Wood"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "02:00 PM",
-    "Artist": "Katie Oates",
-    "Venue": "Little Jumbo"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "02:00 PM",
-    "Artist": "Chris Jamison",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "02:00 PM",
-    "Artist": "Julianna Jade",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "02:00 PM",
-    "Artist": "Big Fur",
-    "Venue": "The Funkatorium"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "02:00 PM",
-    "Artist": "Carolina Sage",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "02:00 PM",
-    "Artist": "Blistering Dissonance",
-    "Venue": "The Odd"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "02:00 PM",
-    "Artist": "Melissa McKinney",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "02:00 PM",
-    "Artist": "Joshua Quimby",
-    "Venue": "The Outpost"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "02:00 PM",
-    "Artist": "Millie Palmer",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:00 PM",
-    "Artist": "Buddhagraph Spaceship",
-    "Venue": "French Broad River Brewery (Outdoors)"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:30 PM",
-    "Artist": "Smooth Goose",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:30 PM",
-    "Artist": "The Beard Cult",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:30 PM",
-    "Artist": "Roamck",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:30 PM",
-    "Artist": "Maggie Valley Band",
-    "Venue": "Highland Brewing Co."
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:30 PM",
-    "Artist": "Jim Swayzee",
-    "Venue": "Jack of the Wood"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:30 PM",
-    "Artist": "David Sneed",
-    "Venue": "Little Jumbo"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:30 PM",
-    "Artist": "Billingsley",
-    "Venue": "New Belgium Brewing (Beer Garden)"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:30 PM",
-    "Artist": "Bloom's Bread & Circus",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:30 PM",
-    "Artist": "Laura Blackley",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:30 PM",
-    "Artist": "Sugar Bomb",
-    "Venue": "The Funkatorium"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:30 PM",
-    "Artist": "Bucko",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:30 PM",
-    "Artist": "On The Block",
-    "Venue": "The Odd"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:30 PM",
-    "Artist": "The High Divers",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:30 PM",
-    "Artist": "The Greenliners",
-    "Venue": "The Outpost"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:30 PM",
-    "Artist": "Color Machine",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "03:30 PM",
-    "Artist": "Zoe & Cloyd",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "04:00 PM",
-    "Artist": "Lo Wolf",
-    "Venue": "Citizen Vinyl"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "04:00 PM",
-    "Artist": "Fresh Buzz",
-    "Venue": "French Broad River Brewery (Indoors)",
-    "Site": "https://www.facebook.com/FreshBuzzband/"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "Sister Ivy",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "We Have Ignition",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "Dark City Kings",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "Beekeepers",
-    "Venue": "French Broad River Brewery (Outdoors)"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "The Judy Chops",
-    "Venue": "Highland Brewing Co."
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "Dan Johnston",
-    "Venue": "Jack of the Wood"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "Planefolk",
-    "Venue": "Little Jumbo"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "The Old Futures",
-    "Venue": "New Belgium Brewing (Beer Garden)"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "Ovadya",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "Bootleg Sinners",
-    "Venue": "Shiloh & Gaines"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "Virtuous",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "Drunken Prayer",
-    "Venue": "The Funkatorium"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "Chess Club",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "tinyTVs",
-    "Venue": "The Odd"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "Sensational Barnes Brothers",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "Jon Stickley Trio",
-    "Venue": "The Outpost"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "David Earl",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:00 PM",
-    "Artist": "Viv & Riley",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:30 PM",
-    "Artist": "Modelface Comedy",
-    "Venue": "Citizen Vinyl"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "05:30 PM",
-    "Artist": "Free Dead Friday",
-    "Venue": "The One Stop"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:00 PM",
-    "Artist": "Pleasantly Wild",
-    "Venue": "French Broad River Brewery (Indoors)"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:30 PM",
-    "Artist": "Daydream Creatures",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:30 PM",
-    "Artist": "Ska City",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:30 PM",
-    "Artist": "Janx Spirit",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:30 PM",
-    "Artist": "Kevin Daniel & the Bottom Line",
-    "Venue": "Highland Brewing Co."
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:30 PM",
-    "Artist": "Kellin Watson",
-    "Venue": "Jack of the Wood"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:30 PM",
-    "Artist": "Chill Paxton",
-    "Venue": "New Belgium Brewing (Beer Garden)"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:30 PM",
-    "Artist": "A. Lee Edwards",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:30 PM",
-    "Artist": "Lazybirds",
-    "Venue": "Shiloh & Gaines"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:30 PM",
-    "Artist": "Po'Folk",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:30 PM",
-    "Artist": "Hannah Kaminer & the Wistfuls",
-    "Venue": "The Funkatorium"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:30 PM",
-    "Artist": "Supatight",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:30 PM",
-    "Artist": "DShk",
-    "Venue": "The Odd"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:30 PM",
-    "Artist": "Gyasi",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:30 PM",
-    "Artist": "Town Mountain",
-    "Venue": "The Outpost"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:30 PM",
-    "Artist": "Arnold Hill",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "06:30 PM",
-    "Artist": "ISMAY",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "07:00 PM",
-    "Artist": "The Snozzberries",
-    "Venue": "French Broad River Brewery (Outdoors)"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:00 PM",
-    "Artist": "Pink Mercury",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:00 PM",
-    "Artist": "Fantomex",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:00 PM",
-    "Artist": "Spill Mill",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:00 PM",
-    "Artist": "Abby Bryant",
-    "Venue": "Highland Brewing Co."
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:00 PM",
-    "Artist": "Chris McGinnis",
-    "Venue": "Jack of the Wood"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:00 PM",
-    "Artist": "Hype Machine",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:00 PM",
-    "Artist": "Unihorn",
-    "Venue": "Shiloh & Gaines"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:00 PM",
-    "Artist": "Adama",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:00 PM",
-    "Artist": "Lua Flora",
-    "Venue": "The Funkatorium"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:00 PM",
-    "Artist": "Brushfire Stankgrass",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:00 PM",
-    "Artist": "Serrate",
-    "Venue": "The Odd"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:00 PM",
-    "Artist": "Floating Action",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:00 PM",
-    "Artist": "Tyler Ramsey",
-    "Venue": "The Outpost"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:00 PM",
-    "Artist": "Appalachian Renegades",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:00 PM",
-    "Artist": "The Dirty French Broads",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:15 PM",
-    "Artist": "The Lactones",
-    "Venue": "French Broad River Brewery (Indoors)"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "08:30 PM",
-    "Artist": "Time Sawyer",
-    "Venue": "The One Stop"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "09:00 PM",
-    "Artist": "Jacob Rodriguez Group",
-    "Venue": "Little Jumbo"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "09:00 PM",
-    "Artist": "Russ Wilson & His Famous Orchestra",
-    "Venue": "The Cellar"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "09:15 PM",
-    "Artist": "EarthCry",
-    "Venue": "French Broad River Brewery (Outdoors)"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "09:30 PM",
-    "Artist": "Florencia & the Feeling",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "09:30 PM",
-    "Artist": "Pink Beds",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "09:30 PM",
-    "Artist": "Powder Horns",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "09:30 PM",
-    "Artist": "Phibian",
-    "Venue": "Jack of the Wood"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "09:30 PM",
-    "Artist": "Aunt Vicki",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "09:30 PM",
-    "Artist": "Pretty Little Goat",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "09:30 PM",
-    "Artist": "Hustle Souls",
-    "Venue": "The Funkatorium"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "09:30 PM",
-    "Artist": "Larry Keel Experience",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "09:30 PM",
-    "Artist": "Cam Girl",
-    "Venue": "The Odd"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "09:30 PM",
-    "Artist": "The Mother Hips",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "09:30 PM",
-    "Artist": "The Tallboys",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "09:30 PM",
-    "Artist": "The Juan Benavides Group",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "09:45 PM",
-    "Artist": "New Pornographers",
-    "Venue": "The Outpost"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "10:00 PM",
-    "Artist": "Pixel Vision",
-    "Venue": "The One Stop"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "10:30 PM",
-    "Artist": "ElectroChemical",
-    "Venue": "French Broad River Brewery (Indoors)"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "10:45 PM",
-    "Artist": "Quinn Sternberg's Mind Beach",
-    "Venue": "Little Jumbo"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "11:00 PM",
-    "Artist": "Natalie Brooke",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "11:00 PM",
-    "Artist": "Cold Choir",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "11:00 PM",
-    "Artist": "Zillicoah",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "11:00 PM",
-    "Artist": "Taylor Martin Trio",
-    "Venue": "Jack of the Wood"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "11:00 PM",
-    "Artist": "Chikomo Marimba",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "11:00 PM",
-    "Artist": "Sufi Brothers",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "11:00 PM",
-    "Artist": "Para Gozar",
-    "Venue": "The Cellar"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "11:00 PM",
-    "Artist": "Pinkeye",
-    "Venue": "The Odd"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "11:00 PM",
-    "Artist": "Terminator X",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "11:00 PM",
-    "Artist": "The Squealers",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "11:15 PM",
-    "Artist": "Dr Bacon",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/2/2024",
-    "Time": "11:30 PM",
-    "Artist": "DJ Lil Meow Meow",
-    "Venue": "The One Stop"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "01:30 PM",
-    "Artist": "Liner Notes: Curated Conversations w/AVLFest Artists",
-    "Venue": "Citizen Vinyl"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "02:00 PM",
-    "Artist": "LazrLuvr",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "02:00 PM",
-    "Artist": "Shorty Can't Eat Books",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "02:00 PM",
-    "Artist": "Drowning Leo",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "02:00 PM",
-    "Artist": "Amanda Neil & the Blue Roses",
-    "Venue": "French Broad River Brewery (indoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "02:00 PM",
-    "Artist": "Keturah Allgood",
-    "Venue": "The Funkatorium"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "02:00 PM",
-    "Artist": "Many A Ship",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "02:00 PM",
-    "Artist": "The Pearlsnap Prophets",
-    "Venue": "Highland Brewing Co."
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "02:00 PM",
-    "Artist": "Strawhouse",
-    "Venue": "Jack of the Wood"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "02:00 PM",
-    "Artist": "Andrew Wakefield",
-    "Venue": "Little Jumbo"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "02:00 PM",
-    "Artist": "Dulci",
-    "Venue": "New Belgium Brewing (lawn)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "02:00 PM",
-    "Artist": "Company Swing",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "02:00 PM",
-    "Artist": "Krave Amiko",
-    "Venue": "Salvage Station (indoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "02:00 PM",
-    "Artist": "Old Sap",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "02:00 PM",
-    "Artist": "Alex Krug Combo",
-    "Venue": "The Outpost"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "02:00 PM",
-    "Artist": "Leisure McCorkle",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "02:00 PM",
-    "Artist": "Jackson Grimm",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:00 PM",
-    "Artist": "Paul McDonald & the Mourning Doves",
-    "Venue": "French Broad River Brewery (outdoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:00 PM",
-    "Artist": "Hot Bread Selectors",
-    "Venue": "New Belgium Brewing (Beer Garden)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:00 PM",
-    "Artist": "\u00a1Tumbao!",
-    "Venue": "Salvage Station (outdoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:00 PM",
-    "Artist": "DJ Bobby Sparkles (plays Diplo)",
-    "Venue": "The Outpost (side stage)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:30 PM",
-    "Artist": "Double Love & the Trouble",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:30 PM",
-    "Artist": "Doss Church & the Unholy Noise",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:30 PM",
-    "Artist": "Yesterday's Clothes",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:30 PM",
-    "Artist": "Dylan Walshe",
-    "Venue": "The Funkatorium"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:30 PM",
-    "Artist": "Josh Blake's Acoustic Band",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:30 PM",
-    "Artist": "The Freeway Jubilee",
-    "Venue": "Highland Brewing Co."
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:30 PM",
-    "Artist": "5j Barrow",
-    "Venue": "Jack of the Wood"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:30 PM",
-    "Artist": "Patrick French",
-    "Venue": "Little Jumbo"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:30 PM",
-    "Artist": "Rahm Squad",
-    "Venue": "New Belgium Brewing (lawn)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:30 PM",
-    "Artist": "Stevie Tombstone",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:30 PM",
-    "Artist": "Tin Roof Echo",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:30 PM",
-    "Artist": "Mar & the Marmeladies",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:30 PM",
-    "Artist": "Wayne Robbins & the Hellsayers",
-    "Venue": "The Outpost"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:30 PM",
-    "Artist": "Stephen Evans & the True Grits",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "03:30 PM",
-    "Artist": "Crys Matthews",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "04:00 PM",
-    "Artist": "Jon Charles Dwyer",
-    "Venue": "Citizen Vinyl"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "04:00 PM",
-    "Artist": "Holler Choir",
-    "Venue": "French Broad River Brewery (indoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "04:00 PM",
-    "Artist": "Pixel Vision",
-    "Venue": "Salvage Station (indoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "04:30 PM",
-    "Artist": "Hot Bread Selectors",
-    "Venue": "New Belgium Brewing (Beer Garden)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "04:30 PM",
-    "Artist": "DJ Bobby Sparkles (plays Diplo)",
-    "Venue": "The Outpost (side stage)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "After Ours",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "The Silver Doors",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "Indelible Sauce",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "DangerMuffin",
-    "Venue": "French Broad River Brewery (outdoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "Magenta Sunshine",
-    "Venue": "The Funkatorium",
-    "Site": "https://magentasunshine.com"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "Lew Card",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "Anthony Rosano & the Conqueroos",
-    "Venue": "Highland Brewing Co."
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "81 Drifters",
-    "Venue": "Jack of the Wood"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "Kevin Daniel",
-    "Venue": "Little Jumbo"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "Scott McMicken & the Ever Expanding",
-    "Venue": "New Belgium Brewing"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "One World Brewing Blues Jam",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "Toubab Krewe",
-    "Venue": "Salvage Station (outdoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "Kilough",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "The Local Honeys",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "The Sadies",
-    "Venue": "The Outpost"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "Copperhead",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "Robert Thomas Band",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:00 PM",
-    "Artist": "Abby Bryant",
-    "Venue": "Shiloh & Gaines"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:30 PM",
-    "Artist": "Boat Command",
-    "Venue": "The One Stop"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "05:30 PM",
-    "Artist": "Modelface Comedy",
-    "Venue": "Citizen Vinyl"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:00 PM",
-    "Artist": "Shake Rag",
-    "Venue": "French Broad River Brewery (indoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:00 PM",
-    "Artist": "Pink Mercury",
-    "Venue": "Salvage Station (indoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:00 PM",
-    "Artist": "DJ Bobby Sparkles (plays Diplo)",
-    "Venue": "The Outpost (side stage)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:15 PM",
-    "Artist": "Hot Bread Selectors",
-    "Venue": "New Belgium Brewing (Beer Garden)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:30 PM",
-    "Artist": "Harvey Street",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:30 PM",
-    "Artist": "Emily Easterly",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:30 PM",
-    "Artist": "Call the Next Witness",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:30 PM",
-    "Artist": "Life Like Water",
-    "Venue": "The Funkatorium"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:30 PM",
-    "Artist": "Colby T Helms & the Virginia Creepers",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:30 PM",
-    "Artist": "Gold Rose",
-    "Venue": "Highland Brewing Co."
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:30 PM",
-    "Artist": "Ashley Chambliss",
-    "Venue": "Jack of the Wood"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:30 PM",
-    "Artist": "Derek Stipe + Stillweather",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:30 PM",
-    "Artist": "Randall Bramblett & the Mega-Blasters",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:30 PM",
-    "Artist": "Susto",
-    "Venue": "The Outpost"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:30 PM",
-    "Artist": "John Kirby & the New Seniors",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:30 PM",
-    "Artist": "Jane Kramer",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:30 PM",
-    "Artist": "FUN SIZE",
-    "Venue": "Shiloh & Gaines"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "06:45 PM",
-    "Artist": "River Whyless",
-    "Venue": "New Belgium Brewing"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "07:00 PM",
-    "Artist": "Chilltonic",
-    "Venue": "The One Stop"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "07:00 PM",
-    "Artist": "Langhorne Slim",
-    "Venue": "French Broad River Brewery (outdoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "07:00 PM",
-    "Artist": "Trap Jazz",
-    "Venue": "Salvage Station (outdoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "07:00 PM",
-    "Artist": "The Odd's Party Foul",
-    "Venue": "The Odd"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "08:00 PM",
-    "Artist": "Pleasantly Wild",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "08:00 PM",
-    "Artist": "Wagging",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "08:00 PM",
-    "Artist": "Jesse Velvet",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "08:00 PM",
-    "Artist": "The Knotty G's String Band",
-    "Venue": "The Funkatorium"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "08:00 PM",
-    "Artist": "Doc Aquatic",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "08:00 PM",
-    "Artist": "Andrew Scotchie",
-    "Venue": "Highland Brewing Co."
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "08:00 PM",
-    "Artist": "Dirty McHannah Band",
-    "Venue": "Jack of the Wood"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "08:00 PM",
-    "Artist": "Karma Dogs",
-    "Venue": "Shiloh & Gaines"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "08:00 PM",
-    "Artist": "Moon Bride",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "08:00 PM",
-    "Artist": "Caitlin Krisko & The Broadcast",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "08:00 PM",
-    "Artist": "Blitzen Trapper",
-    "Venue": "The Outpost"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "08:00 PM",
-    "Artist": "Fifty Year Flood",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "08:00 PM",
-    "Artist": "Free Planet Radio",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "08:15 PM",
-    "Artist": "Richard Barrett & Friends",
-    "Venue": "French Broad River Brewery (indoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "08:15 PM",
-    "Artist": "Litz",
-    "Venue": "Salvage Station (indoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "08:30 PM",
-    "Artist": "Shed Bugs",
-    "Venue": "The One Stop"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "09:00 PM",
-    "Artist": "Kelle Jolly & Will Boyd",
-    "Venue": "Little Jumbo"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "09:00 PM",
-    "Artist": "One World Brewing Saturday Sessions",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "09:00 PM",
-    "Artist": "Russ Wilson & His Famous Orchestra",
-    "Venue": "The Cellar"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "09:15 PM",
-    "Artist": "Brett Dennen",
-    "Venue": "French Broad River Brewery (outdoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "09:15 PM",
-    "Artist": "Papadosio",
-    "Venue": "Salvage Station (outdoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "09:30 PM",
-    "Artist": "Secret B-Sides",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "09:30 PM",
-    "Artist": "C Shreve Hip Hop Showcase",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "09:30 PM",
-    "Artist": "Basement Healer",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "09:30 PM",
-    "Artist": "Pleasure Chest",
-    "Venue": "The Funkatorium"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "09:30 PM",
-    "Artist": "Firecracker Jazz Band",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "09:30 PM",
-    "Artist": "Julia Sanders",
-    "Venue": "Jack of the Wood"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "09:30 PM",
-    "Artist": "Miami Gold",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "09:30 PM",
-    "Artist": "Sarah Shook & the Disarmers",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "09:30 PM",
-    "Artist": "Lyric",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "09:30 PM",
-    "Artist": "Resonant Rogues",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "09:45 PM",
-    "Artist": "Beachwood Sparks",
-    "Venue": "The Outpost"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "10:00 PM",
-    "Artist": "DJ Mad Mike",
-    "Venue": "The One Stop"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "10:00 PM",
-    "Artist": "Queen Bee & the Honeylovers",
-    "Venue": "The Cellar"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "10:30 PM",
-    "Artist": "Sanctum Sully",
-    "Venue": "French Broad River Brewery (indoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "10:45 PM",
-    "Artist": "Brian Felix Organ Trio",
-    "Venue": "Little Jumbo"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "10:45 PM",
-    "Artist": "cryptoWAVE",
-    "Venue": "Salvage Station (indoors)"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "11:00 PM",
-    "Artist": "Pocket Strange",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "11:00 PM",
-    "Artist": "Tight",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "11:00 PM",
-    "Artist": "Hank West & the Smokin Hots",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "11:00 PM",
-    "Artist": "Bam-a-Lam",
-    "Venue": "Jack of the Wood"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "11:00 PM",
-    "Artist": "Myxed Messyngers",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "11:00 PM",
-    "Artist": "Russ Wilson & His Famous Orchestra",
-    "Venue": "The Cellar"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "11:00 PM",
-    "Artist": "Washed Out",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "11:00 PM",
-    "Artist": "Sound Lobotomy",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/3/2024",
-    "Time": "11:30 PM",
-    "Artist": "Black Fluff Duo",
-    "Venue": "The One Stop"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "02:00 PM",
-    "Artist": "Peggy Ratusz",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "02:00 PM",
-    "Artist": "Roots & Dore Band",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "02:00 PM",
-    "Artist": "Derian Blane",
-    "Venue": "The Outpost (side stage)"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "02:00 PM",
-    "Artist": "Em & the Innocent Mischief",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "02:00 PM",
-    "Artist": "Local 604 Bottle Shop Asheville Synth Club",
-    "Venue": "The Odd"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "02:00 PM",
-    "Artist": "Keith Harry",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "02:00 PM",
-    "Artist": "Adam Chase & Friends",
-    "Venue": "Salvage Station (indoors)"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "02:00 PM",
-    "Artist": "Alma Russ",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "02:00 PM",
-    "Artist": "Rock Academy Showcase",
-    "Venue": "Highland Brewing Co."
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "02:00 PM",
-    "Artist": "Kevin Rumley",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "02:00 PM",
-    "Artist": "Andrew Thelston Band",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "01:30 PM",
-    "Artist": "Liner Notes: Curated Conversations w/AVLFest Artists",
-    "Venue": "Citizen Vinyl"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "02:00 PM",
-    "Artist": "Saylor Brothers",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "03:00 PM",
-    "Artist": "Chalwa",
-    "Venue": "French Broad River Brewery (Indoors)"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "03:00 PM",
-    "Artist": "Josh Stack",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "03:30 PM",
-    "Artist": "Jay Sanders Nonet",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "03:30 PM",
-    "Artist": "Ryan Taylor Price",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "03:30 PM",
-    "Artist": "McKinney (solo)",
-    "Venue": "The Outpost (side stage)"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "03:30 PM",
-    "Artist": "Rainy Eyes",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "03:30 PM",
-    "Artist": "The Moon & You",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "03:30 PM",
-    "Artist": "Josh Clark's Visible Spectrum",
-    "Venue": "Salvage Station (indoors)"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "03:30 PM",
-    "Artist": "Barrett Davis",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "03:30 PM",
-    "Artist": "Detective Blind",
-    "Venue": "Highland Brewing Co."
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "03:30 PM",
-    "Artist": "Ivy Eld",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "03:30 PM",
-    "Artist": "Daikaiju",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "03:30 PM",
-    "Artist": "Songs from the Road Band",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "04:00 PM",
-    "Artist": "Dave Desmelik",
-    "Venue": "Citizen Vinyl"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "04:30 PM",
-    "Artist": "Keep Flying",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "05:00 PM",
-    "Artist": "Darren Nicholson",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "05:00 PM",
-    "Artist": "Nick & Brew",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "05:00 PM",
-    "Artist": "Option 22",
-    "Venue": "The Outpost (side stage)"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "05:00 PM",
-    "Artist": "Dylan LeBlanc",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "05:00 PM",
-    "Artist": "We Are Ants to Them",
-    "Venue": "The Odd"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "05:00 PM",
-    "Artist": "Canon Tyler",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "05:00 PM",
-    "Artist": "E'Lon JD",
-    "Venue": "Salvage Station (indoors)"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "05:00 PM",
-    "Artist": "Cigarettes @ Sunset",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "05:00 PM",
-    "Artist": "Toybox Theatre",
-    "Venue": "Highland Brewing Co."
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "05:00 PM",
-    "Artist": "Palmyra",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "05:00 PM",
-    "Artist": "Get Right Band",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "05:00 PM",
-    "Artist": "Allgorhythms",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "05:30 PM",
-    "Artist": "Reasonably Priced Babies",
-    "Venue": "Citizen Vinyl"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "06:00 PM",
-    "Artist": "The Pinkerton Raid",
-    "Venue": "Fleetwood's"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "06:30 PM",
-    "Artist": "Malcolm Holcombe Tribute",
-    "Venue": "Wortham Center for the Performing Arts"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "06:30 PM",
-    "Artist": "Carpal Tullar",
-    "Venue": "The Social"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "06:30 PM",
-    "Artist": "Christina Chandler",
-    "Venue": "The Outpost (side stage)"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "06:30 PM",
-    "Artist": "East Coast Dirt",
-    "Venue": "Sovereign Kava"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "06:30 PM",
-    "Artist": "Fritz & Co",
-    "Venue": "One World Brewing"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "06:30 PM",
-    "Artist": "Secret Agent 23 Skidoo",
-    "Venue": "Highland Brewing Co."
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "06:30 PM",
-    "Artist": "Yarn",
-    "Venue": "The Grey Eagle"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "06:30 PM",
-    "Artist": "Bask",
-    "Venue": "Eulogy"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "06:30 PM",
-    "Artist": "The Snozzberries",
-    "Venue": "Asheville Music Hall"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "06:45 PM",
-    "Artist": "The Heavy Heavy",
-    "Venue": "The Orange Peel"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "06:45 PM",
-    "Artist": "Jeff Sipe Trio",
-    "Venue": "Salvage Station (indoors)"
-  },
-  {
-    "Date": "8/4/2024",
-    "Time": "06:30 PM",
-    "Artist": "Lurky Skunk",
-    "Venue": "The Odd"
-  }
-];
+      let bandList = [
+        {
+          Date: "8/1/2024",
+          Artist: "THE BIG HUNGRY",
+          Time: "6:00:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Indie Rock",
+          Site: "https://thebighungryband.com",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "SLOW PACKER",
+          Time: "6:00:00 PM",
+          Venue: "EULOGY",
+          Genre: "Indie Rock",
+          Site: "https: //slowpacker.bandcamp.com/album/everything-happens-in-a-cycle",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "THE DEATHBOTS",
+          Time: "6:00:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Electronic/Experimental",
+          Site: "https://thedeathbots.bandcamp.com",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "MCKINNEY",
+          Time: "6:00:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (Indoors)",
+          Site: "https://melissamckinneymusic.com",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "TINA & HER PONY",
+          Time: "6:00:00 PM",
+          Venue: "THE FUNKATORIUM",
+          Genre: "Indie Folk",
+          Site: "http://tinaandherpony.com",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "ASHLEY HEATH AND HER HEATHENS",
+          Time: "6:00:00 PM",
+          Venue: "THE GREY EAGLE",
+          Genre: "Blues",
+          Site: "https://ashleyleeannheath.com",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "THE LONG DISTANCE RELATIONSHIP",
+          Time: "6:00:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+          Genre: "Indie Rock",
+          Site: "https://thelongdistancerelationship.bandcamp.com",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "MAGENTA SUNSHINE",
+          Time: "6:00:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Site: "https://magentasunshine.com",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "FRESH BUZZ",
+          Time: "6:00:00 PM",
+          Venue: "SALVAGE STATION (indoors)",
+          Genre: "Electronic/Dance",
+          Site: "https://www.facebook.com/FreshBuzzband/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "DIRTY DEAD",
+          Time: "6:00:00 PM",
+          Venue: "SHILOH & GAINES",
+          Genre: "Indie Rock",
+          Site: "https://www.facebook.com/dirtydeadband/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "MIRIAM ALLEN",
+          Time: "6:00:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Singer-Songwriter/Folk",
+          Site: "https://www.miriamallen.net",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "SUNBEARER",
+          Time: "6:00:00 PM",
+          Venue: "THE ODD",
+          Genre: "Electronic/Experimental",
+          Site: "https://sunbearerdoom.bandcamp.com",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "JUSTIN WELLS",
+          Time: "6:00:00 PM",
+          Venue: "THE OUTPOST",
+          Genre: "Country/Americana",
+          Site: "https://linktr.ee/justinwellsmusic",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "THE Z-MAN EXPERIENCE",
+          Time: "6:00:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Electronic/Experimental",
+          Site: "https://thezmanexperience.com",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "@",
+          Time: "6:00:00 PM",
+          Venue: "THE ORANGE PEEL",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "FANCY & THE GENTLEMEN",
+          Time: "6:00:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Indie Rock",
+          Site: "https://www.fancyandthegentlemen.com",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "PAPER CROWNS DUO",
+          Time: "6:30:00 PM",
+          Venue: "THE ONE STOP",
+          Genre: "Indie Folk",
+          Site: "https://www.thepapercrowns.com",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "DREW MATULICH'S BLUEGRASS JAM",
+          Time: "7:00:00 PM",
+          Venue: "JACK OF THE WOOD",
+          Genre: "Bluegrass/Folk",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "AMANDA ANNE PLATT & THE HONEYCUTTERS",
+          Time: "7:15:00 PM",
+          Venue: "THE OUTPOST",
+          Genre: "Country/Americana",
+          Site: "https://www.honeycutters.com",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "THE FEELS",
+          Time: "7:30:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Indie Rock",
+          Site: "https://thefeelsasheville.com",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "SOUNDING ARROW",
+          Time: "7:30:00 PM",
+          Venue: "EULOGY",
+          Genre: "Indie Rock",
+          Site: "https://www.facebook.com/ashesandarrowsofficial/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "LONNIE WALKER",
+          Time: "7:30:00 PM",
+          Venue: "FLEETWOOD'S",
+          Site: "https://lonniewalker.com",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "JOSHUA CARPENTER",
+          Time: "7:30:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (indoors)",
+          Genre: "Singer-Songwriter/Folk",
+          Site: "https://jcarps.com/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "EMANUEL WYNTER",
+          Time: "7:30:00 PM",
+          Venue: "THE FUNKATROIUM",
+          Genre: "Singer-Songwriter/Folk",
+          Site: "https://www.emanuelwynter.com",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "MAMA & THE RUCKUS",
+          Time: "7:30:00 PM",
+          Venue: "THE GREY EAGLE",
+          Site: "https://www.facebook.com/mamaandtheruckus/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "PICK YOUR SWITCH",
+          Time: "7:30:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+          Genre: "Indie Rock",
+          Site: "https://www.reverbnation.com/pickyourswitch",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "KID BILLY",
+          Time: "7:30:00 PM",
+          Venue: "ONE WORLD BREWING",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "RANDOM ANIMALS",
+          Time: "7:30:00 PM",
+          Venue: "SALVAGE STATION (indoors)",
+          Genre: "Indie Rock",
+          Site: "https://www.reverbnation.com/randomanimalsmusic",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "WHITNEY MONGE",
+          Time: "7:30:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Singer-Songwriter/Folk",
+          Site: "https://www.whitneymonge.com/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "TEMPTATION'S WINGS",
+          Time: "7:30:00 PM",
+          Venue: "THE ODD",
+          Genre: "Metal/Hardcore",
+          Site: "https://www.facebook.com/twbandwnc/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "EAZE DOGG",
+          Time: "7:30:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Hip-Hop/Rap",
+          Site: "https://www.reverbnation.com/artist/video/16193528",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "ASHES & ARROWS",
+          Time: "7:30:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Indie Rock",
+          Site: "https://www.ashesandarrows.com/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "UNSPOKEN TRADITION",
+          Time: "7:30:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Bluegrass/Folk",
+          Site: "https://unspokentradition.com/about/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "PETER TOWNSEND",
+          Time: "8:00:00 PM",
+          Venue: "THE ONE STOP",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "SG GOODMAN",
+          Time: "8:45:00 PM",
+          Venue: "THE OUTPOST",
+          Genre: "Singer-Songwriter/Folk",
+          Site: "https://www.sggoodman.net",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "GOLDIE & THE SCREAMERS",
+          Time: "9:00:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (Indoors)",
+          Genre: "Indie Rock",
+          Site: "https://m.facebook.com/goldieandthescreamers/about/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "LYRIC",
+          Time: "9:00:00 PM",
+          Venue: "THE FUNKATORIUM",
+          Genre: "Funk",
+          Site: "https://www.reverbnation.com/lyricfans",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "RED CLAY REVIVIAL",
+          Time: "9:00:00 PM",
+          Venue: "THE GREY EAGLE",
+          Site: "https://www.youtube.com/channel/UCHRFJQNraWgR_zqdq6nCKOw",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "HEARTS GONE SOUTH",
+          Time: "9:00:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+          Genre: "Country/Americana",
+          Site: "https://heartsgonesouth.bandcamp.com/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "THE DANCING FLEAS",
+          Time: "9:00:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "Indie Rock",
+          Site: "https://www.thedancingfleas.com/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "BOULEVARDS",
+          Time: "9:00:00 PM",
+          Venue: "SALVAGE STATION (indoors)",
+          Genre: "Indie Rock",
+          Site: "https://www.boulevards.band",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "PIERCE EDENS",
+          Time: "9:00:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Singer-Songwriter/Folk",
+          Site: "https://pierceedens.com/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "US CHRISTMAS",
+          Time: "9:00:00 PM",
+          Venue: "THE ODD",
+          Genre: "Indie Rock",
+          Site: "https://www.spirit-of-metal.com/en/band/US_Christmas",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "40 BOYZ",
+          Time: "9:00:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Hip-Hop/Rap",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "THE JOHN HENRYS",
+          Time: "9:00:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "VICTORIA VICTORIA",
+          Time: "9:00:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Indie Rock",
+          Site: "http://www.victoriavictoria.org/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "SANTIAGO Y LOS GATOS",
+          Time: "9:00:00 PM",
+          Venue: "EULOGY",
+          Site: "https://www.jeffsantiago.com/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "MONSTER WAVE",
+          Time: "9:00:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Electronic/Surf Rock",
+          Site: "https://monsterwave.bandcamp.com",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "SPIRO NICOLOPOLUS BLUE APOCALYPSE!",
+          Time: "9:00:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Experimental/Avant-Garde",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "FEE FI PHAUX FISH",
+          Time: "10:00:00 PM",
+          Venue: "THE ONE STOP",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "IN FLIGHT",
+          Time: "10:30:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "CPT. HYPERDRIVE",
+          Time: "10:30:00 PM",
+          Venue: "EULOGY",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "JESUS CASINO",
+          Time: "10:30:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "ISAAC HADDEN ORGAN TRIO",
+          Time: "10:30:00 PM",
+          Venue: "THE GREY EAGLE",
+          Genre: "Jazz/Funk",
+          Site: "https://isaachadden.com/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "SHED BUGS",
+          Time: "10:30:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "THE BILLY SEA",
+          Time: "10:30:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Indie Rock",
+          Site: "https://billycardine.com/the-billy-sea",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "SHADOWCLOAK",
+          Time: "10:30:00 PM",
+          Venue: "THE ODD",
+          Genre: "Electronic/Experimental",
+          Site: "https://m.facebook.com/shadowcloak.avl/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "PETER THE POET",
+          Time: "10:30:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Spoken Word/Poetry",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "JOSLYN & THE SWEET COMPRESSION",
+          Time: "10:45:00 PM",
+          Venue: "SALVAGE STATION (indoors)",
+          Genre: "Indie Rock",
+          Site: "https://joslynandtsc.com/",
+        },
+        {
+          Date: "8/1/2024",
+          Artist: "JESSICA PRATT",
+          Time: "10:45:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Singer-Songwriter/Folk",
+          Site: "https://www.jessicapratt.net/",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "LINER NOTES: CURATED CONVERSATIONS W/AVLFEST ARTISTS",
+          Time: "1:30:00 PM",
+          Venue: "CITIZEN VINYL",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "MILLIE PALMER",
+          Time: "2:00:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Singer-Songwriter/Folk",
+          Site: "http://www.milliepalmermusic.com/",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "JOSHUA QUIMBY",
+          Time: "2:00:00 PM",
+          Venue: "THE OUTPOST",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "MELISSA MCKINNEY",
+          Time: "2:00:00 PM",
+          Venue: "THE ORANGE PEEL",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "BLISTERING DISSONANCE",
+          Time: "2:00:00 PM",
+          Venue: "THE ODD",
+          Genre: "Metal/Hardcore",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "JULIANNA JADE",
+          Time: "2:00:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "CHRIS JAMISON",
+          Time: "2:00:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "KATIE OATES",
+          Time: "2:00:00 PM",
+          Venue: "LITTLE JUMBO",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "AARON LANE",
+          Time: "2:00:00 PM",
+          Venue: "JACK OF THE WOOD",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "VINCE JUNIOR BAND",
+          Time: "2:00:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "CAROLINA SAGE",
+          Time: "2:00:00 PM",
+          Venue: "THE GREY EAGLE",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "BIG FUR",
+          Time: "2:00:00 PM",
+          Venue: "THE FUNKATORIUM",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "BOAT COMMAND",
+          Time: "2:00:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (Indoors)",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "ROND",
+          Time: "2:00:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "POLLY PANIC",
+          Time: "2:00:00 PM",
+          Venue: "EULOGY",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "LAVENDER BLUE",
+          Time: "2:00:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "BUDDHAGRAPH SPACESHIP",
+          Time: "3:00:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (outdoors)",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "ZOE & CLOYD",
+          Time: "3:30:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Bluegrass/Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "COLOR MACHINE",
+          Time: "3:30:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "THE GREENLINERS",
+          Time: "3:30:00 PM",
+          Venue: "THE OUTPOST",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "THE HIGH DIVERS",
+          Time: "3:30:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "ON THE BLOCK",
+          Time: "3:30:00 PM",
+          Venue: "THE ODD",
+          Genre: "Hip-Hop/Rap",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "LAURA BLACKLEY",
+          Time: "3:30:00 PM",
+          Venue: "SOVEREIGN KAVA",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "BLOOM'S BREAD & CIRCUS",
+          Time: "3:30:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "Indie Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "BILLINGSLEY",
+          Time: "3:30:00 PM",
+          Venue: "NEW BELGIUM BREWING",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "DAVID SNEED",
+          Time: "3:30:00 PM",
+          Venue: "LITTLE JUMBO",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "JIM SWAYZEE",
+          Time: "3:30:00 PM",
+          Venue: "JACK OF THE WOOD",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "MAGGIE VALLEY BAND",
+          Time: "3:30:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+          Genre: "Country",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "BUCKO",
+          Time: "3:30:00 PM",
+          Venue: "THE GREY EAGLE",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "SUGAR BOMB",
+          Time: "3:30:00 PM",
+          Venue: "THE FUNKATORIUM",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "ROAMCK",
+          Time: "3:30:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "THE BEARD CULT",
+          Time: "3:30:00 PM",
+          Venue: "EULOGY",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "SMOOTH GOOSE",
+          Time: "3:30:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "FRESH BUZZ",
+          Time: "4:00:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (Indoors)",
+          Genre: "Electronic/Dance",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "LO WOLF",
+          Time: "4:00:00 PM",
+          Venue: "CITIZEN VINYL",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "VIV & RILEY",
+          Time: "5:00:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Indie Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "DAVID EARL",
+          Time: "5:00:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "JON STICKLEY TRIO",
+          Time: "5:00:00 PM",
+          Venue: "THE OUTPOST",
+          Genre: "Bluegrass/Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "SENSATIONAL BARNES BROTHERS",
+          Time: "5:00:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Gospel/Soul",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "TINYTVS",
+          Time: "5:00:00 PM",
+          Venue: "THE ODD",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "VIRTUOUS",
+          Time: "5:00:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "OVADYA",
+          Time: "5:00:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "World Music/Middle Eastern",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "THE OLD FUTURES",
+          Time: "5:00:00 PM",
+          Venue: "NEW BELGIUM BREWING (beer garden)",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "PLANEFOLK",
+          Time: "5:00:00 PM",
+          Venue: "LITTLE JUMBO",
+          Genre: "Indie Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "DAN JOHNSTON",
+          Time: "5:00:00 PM",
+          Venue: "JACK OF THE WOOD",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "THE JUDY CHOPS",
+          Time: "5:00:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "CHESS CLUB",
+          Time: "5:00:00 PM",
+          Venue: "THE GREY EAGLE",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "DRUNKEN PRAYER",
+          Time: "5:00:00 PM",
+          Venue: "THE FUNKATORIUM",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "BEEKEEPERS",
+          Time: "5:00:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (outdoors)",
+          Genre: "Indie Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "DARK CITY KINGS",
+          Time: "5:00:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "WE HAVE IGNITION",
+          Time: "5:00:00 PM",
+          Venue: "EULOGY",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "SISTER IVY",
+          Time: "5:00:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Indie Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "BOOTLEG SINNERS",
+          Time: "5:00:00 PM",
+          Venue: "SHILOH & GAINES",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "MODELFACE COMEDY",
+          Time: "5:30:00 PM",
+          Venue: "CITIZEN VINYL",
+          Genre: "Comedy",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "FREE DEAD FRIDAY",
+          Time: "5:30:00 PM",
+          Venue: "THE ONE STOP",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "PLEASANTLY WILD",
+          Time: "6:00:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (indoors)",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "ISMAY",
+          Time: "6:30:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Indie Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "ARNOLD HILL",
+          Time: "6:30:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "TOWN MOUNTAIN",
+          Time: "6:30:00 PM",
+          Venue: "THE OUTPOST",
+          Genre: "Bluegrass/Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "GYASI",
+          Time: "6:30:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "DSHK",
+          Time: "6:30:00 PM",
+          Venue: "THE ODD",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "PO'FOLK",
+          Time: "6:30:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "A. LEE EDWARDS",
+          Time: "6:30:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "CHILL PAXTON",
+          Time: "6:30:00 PM",
+          Venue: "NEW BELGIUM BREWING (beer garden)",
+          Genre: "Electronic/Chillout",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "KELLIN WATSON",
+          Time: "6:30:00 PM",
+          Venue: "JACK OF THE WOOD",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "KEVIN DANIEL & THE BOTTOM LINE",
+          Time: "6:30:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "SUPATIGHT",
+          Time: "6:30:00 PM",
+          Venue: "THE GREY EAGLE",
+          Genre: "Funk/Soul",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "HANNAH KAMINER & THE WISTFULS",
+          Time: "6:30:00 PM",
+          Venue: "THE FUNKATORIUM",
+          Genre: "Indie Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "JANX SPIRIT",
+          Time: "6:30:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "SKA CITY",
+          Time: "6:30:00 PM",
+          Venue: "EULOGY",
+          Genre: "Ska/Punk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "DAYDREAM CREATURES",
+          Time: "6:30:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "LAZYBIRDS",
+          Time: "6:30:00 PM",
+          Venue: "SHILOH & GAINES",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "THE SNOZZBERRIES",
+          Time: "7:00:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (outdoors)",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "THE DIRTY FRENCH BROADS",
+          Time: "8:00:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "APPALACHIAN RENEGADES",
+          Time: "8:00:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Bluegrass/Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "FLOATING ACTION",
+          Time: "8:00:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "SERRATE",
+          Time: "8:00:00 PM",
+          Venue: "THE ODD",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "ADAMA",
+          Time: "8:00:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "World Music/Afrobeat",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "HYPE MACHINE",
+          Time: "8:00:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "Electronic/Dance",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "CHRIS MCGINNIS",
+          Time: "8:00:00 PM",
+          Venue: "JACK OF THE WOOD",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "ABBY BRYANT",
+          Time: "8:00:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+          Genre: "Indie Pop",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "BRUSHFIRE STANKGRASS",
+          Time: "8:00:00 PM",
+          Venue: "THE GREY EAGLE",
+          Genre: "Bluegrass/Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "LUA FLORA",
+          Time: "8:00:00 PM",
+          Venue: "THE FUNKATORIUM",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "SPILL MILL",
+          Time: "8:00:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "FANTOMEX",
+          Time: "8:00:00 PM",
+          Venue: "EULOGY",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "PINK MERCURY",
+          Time: "8:00:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "UNIHORN",
+          Time: "8:00:00 PM",
+          Venue: "SHILOH & GAINES",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "TYLER RAMSEY",
+          Time: "8:00:00 PM",
+          Venue: "THE OUTPOST",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "THE LACTONES",
+          Time: "8:15:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (indoors)",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "TIME SAWYER",
+          Time: "8:30:00 PM",
+          Venue: "THE ONE STOP",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "RUSS WILSON & HIS FAMOUS ORCHESTRA",
+          Time: "9:00:00 PM",
+          Venue: "THE CELLAR",
+          Genre: "Jazz/Swing",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "JACOB RODRIGUEZ GROUP",
+          Time: "9:00:00 PM",
+          Venue: "LITTLE JUMBO",
+          Genre: "Jazz/Swing",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "EARTHCRY",
+          Time: "9:15:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (outdoors)",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "THE JUAN BENAVIDES GROUP",
+          Time: "9:30:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Latin/World Music",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "THE TALLBOYS",
+          Time: "9:30:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "CAM GIRL",
+          Time: "9:30:00 PM",
+          Venue: "THE ODD",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "PRETTY LITTLE GOAT",
+          Time: "9:30:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Indie Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "AUNT VICKI",
+          Time: "9:30:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "Indie Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "PHIBIAN",
+          Time: "9:30:00 PM",
+          Venue: "JACK OF THE WOOD",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "LARRY KEEL EXPERIENCE",
+          Time: "9:30:00 PM",
+          Venue: "THE GREY EAGLE",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "HUSTLE SOULS",
+          Time: "9:30:00 PM",
+          Venue: "THE FUNKATORIUM",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "POWDER HORNS",
+          Time: "9:30:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "PINK BEDS",
+          Time: "9:30:00 PM",
+          Venue: "EULOGY",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "FLORENCIA & THE FEELING",
+          Time: "9:30:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Indie Pop",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "THE MOTHER HIPS",
+          Time: "9:30:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Rock/Jam Band",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "NEW PORNOGRAPHERS",
+          Time: "9:45:00 PM",
+          Venue: "THE OUTPOST",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "PIXEL VISION",
+          Time: "10:00:00 PM",
+          Venue: "THE ONE STOP",
+          Genre: "Electronic/Synthwave",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "ELECTROCHEMICAL",
+          Time: "10:30:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (indoors)",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "QUINN STERNBERG'S MIND BEACH",
+          Time: "10:45:00 PM",
+          Venue: "LITTLE JUMBO",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "THE SQUEALERS",
+          Time: "11:00:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "PINKEYE",
+          Time: "11:00:00 PM",
+          Venue: "THE ODD",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "PARA GOZAR",
+          Time: "11:00:00 PM",
+          Venue: "THE CELLAR",
+          Genre: "Latin/World Music",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "SUFI BROTHERS",
+          Time: "11:00:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "World Music/Middle Eastern",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "CHIKOMO MARIMBA",
+          Time: "11:00:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "World Music/Afrobeat",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "TAYLOR MARTIN TRIO",
+          Time: "11:00:00 PM",
+          Venue: "JACK OF THE WOOD",
+          Genre: "Jazz/Swing",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "ZILLICOAH",
+          Time: "11:00:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "COLD CHOIR",
+          Time: "11:00:00 PM",
+          Venue: "EULOGY",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "NATALIE BROOKE",
+          Time: "11:00:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "TERMINATOR X",
+          Time: "11:00:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Hip-Hop/Rap",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "DR. BACON",
+          Time: "11:15:00 PM",
+          Venue: "THE GREY EAGLE",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/2/2024",
+          Artist: "DJ LIL MEOW MEOW",
+          Time: "11:30:00 PM",
+          Venue: "THE ONE STOP",
+          Genre: "Electronic/Dance",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "LINER NOTES: CURATED CONVERSATIONS W/AVLFEST ARTISTS",
+          Time: "1:30:00 PM",
+          Venue: "CITIZEN VINYL",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "LAZRLUVR",
+          Time: "2:00:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "SHORTY CAN'T EAT BOOKS",
+          Time: "2:00:00 PM",
+          Venue: "EULOGY",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "DROWNING LEO",
+          Time: "2:00:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "AMANDA NEIL & THE BLUE ROSES",
+          Time: "2:00:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (indoors)",
+          Genre: "Indie Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "KETURAH ALLGOOD",
+          Time: "2:00:00 PM",
+          Venue: "THE FUNKATORIUM",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "MANY A SHIP",
+          Time: "2:00:00 PM",
+          Venue: "THE GREY EAGLE",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "STRAWHOUSE",
+          Time: "2:00:00 PM",
+          Venue: "JACK OF THE WOOD",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "ANDREW WAKEFIELD",
+          Time: "2:00:00 PM",
+          Venue: "LITTLE JUMBO",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "DULCI",
+          Time: "2:00:00 PM",
+          Venue: "NEW BELGIUM BREWING (lawn)",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "THE PEARLSNAP PROPHETS",
+          Time: "2:00:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "COMPANY SWING",
+          Time: "2:00:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "Jazz/Swing",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "KRAVE AMIKO",
+          Time: "2:00:00 PM",
+          Venue: "SALVAGE STATION (indoors)",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "OLD SAP",
+          Time: "2:00:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "MAR & THE MARMELADIES",
+          Time: "2:00:00 PM",
+          Venue: "THE ORANGE PEEL",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "ALEX KRUG COMBO",
+          Time: "2:00:00 PM",
+          Venue: "THE OUTPOST",
+          Genre: "Jazz/Funk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "LEISURE MCCORKLE",
+          Time: "2:00:00 PM",
+          Venue: "THE SOCIAL",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "JACKSON GRIMM",
+          Time: "2:00:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "HOT BREAD SELECTORS",
+          Time: "3:00:00 PM",
+          Venue: "NEW BELGIUM BREWING (beer garden)",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "DJ BOBBY SPARKLES (PLAYS DIPLO)",
+          Time: "3:00:00 PM",
+          Venue: "THE OUTPOST (side stage)",
+          Genre: "Electronic/Dance",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "PAUL MCDONALD & THE MOURNING DOVES",
+          Time: "3:00:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (outdoors)",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "\u00a1TUMBAO!",
+          Time: "3:00:00 PM",
+          Venue: "SALVAGE STATION (outdoors)",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "DOUBLE LOVE & THE TROUBLE",
+          Time: "3:30:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "DOSS CHURCH & THE UNHOLY NOISE",
+          Time: "3:30:00 PM",
+          Venue: "EULOGY",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "YESTERDAY'S CLOTHES",
+          Time: "3:30:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "DYLAN WALSHE",
+          Time: "3:30:00 PM",
+          Venue: "THE FUNKATORIUM",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "JOSH BLAKE'S ACOUSTIC BAND",
+          Time: "3:30:00 PM",
+          Venue: "THE GREY EAGLE",
+          Genre: "Indie Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "THE FREEWAY JUBILEE",
+          Time: "3:30:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "5J BARROW",
+          Time: "3:30:00 PM",
+          Venue: "JACK OF THE WOOD",
+          Genre: "Indie Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "PATRICK FRENCH",
+          Time: "3:30:00 PM",
+          Venue: "LITTLE JUMBO",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "RAHM SQUAD",
+          Time: "3:30:00 PM",
+          Venue: "NEW BELGIUM BREWING (lawn)",
+          Genre: "Hip-Hop/Rap",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "STEVIE TOMBSTONE",
+          Time: "3:30:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "TIN ROOF ECHO",
+          Time: "3:30:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "THE LOCAL HONEYS",
+          Time: "3:30:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "WAYNE ROBBINS & THE HELLSAYERS",
+          Time: "3:30:00 PM",
+          Venue: "THE OUTPOST",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "STEPHEN EVANS & THE TRUE GRITS",
+          Time: "3:30:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "CRYS MATTHEWS",
+          Time: "3:30:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "JON CHARLES DWYER",
+          Time: "4:00:00 PM",
+          Venue: "CITIZEN VINYL",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "HOLLER CHOIR",
+          Time: "4:00:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (indoors)",
+          Genre: "Indie Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "PIXEL VISION",
+          Time: "4:00:00 PM",
+          Venue: "SALVAGE STATION (indoors)",
+          Genre: "Electronic/Synthwave",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "HOT BREAD SELECTORS",
+          Time: "4:30:00 PM",
+          Venue: "NEW BELGIUM BREWING (beer garden)",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "DJ BOBBY SPARKLES (PLAYS DIPLO)",
+          Time: "4:30:00 PM",
+          Venue: "THE OUTPOST (side stage)",
+          Genre: "Electronic/Dance",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "AFTER OURS",
+          Time: "5:00:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "THE SILVER DOORS",
+          Time: "5:00:00 PM",
+          Venue: "EULOGY",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "INDELIBLE SAUCE",
+          Time: "5:00:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "DANGERMUFFIN",
+          Time: "5:00:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (outdoors)",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "MAGENTA SUNSHINE",
+          Time: "5:00:00 PM",
+          Venue: "THE FUNKATORIUM",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "LEW CARD",
+          Time: "5:00:00 PM",
+          Venue: "THE GREY EAGLE",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "ANTHONY ROSANO & THE CONQUEROOS",
+          Time: "5:00:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+          Genre: "Blues/Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "81 DRIFTERS",
+          Time: "5:00:00 PM",
+          Venue: "JACK OF THE WOOD",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "KEVIN DANIEL",
+          Time: "5:00:00 PM",
+          Venue: "LITTLE JUMBO",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "TOUBAB KREWE",
+          Time: "5:00:00 PM",
+          Venue: "SALVAGE STATION (outdoors)",
+          Genre: "World Music/Afrobeat",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "KILOUGH",
+          Time: "5:00:00 PM",
+          Venue: "SOVEREIGN KAVA",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "CAITLIN KRISKO & THE BROADCAST",
+          Time: "5:00:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "THE SADIES",
+          Time: "5:00:00 PM",
+          Venue: "THE OUTPOST",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "COPPERHEAD",
+          Time: "5:00:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "ROBERT THOMAS BAND",
+          Time: "5:00:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "TBD",
+          Time: "5:00:00 PM",
+          Venue: "SHILOH & GAINES",
+          Genre: "Unknown/Various",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "SCOTT MCMICKEN & THE EVER EXPANDING",
+          Time: "5:00:00 PM",
+          Venue: "NEW BELGIUM BREWING",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "ONE WORLD BREWING Blues Jam",
+          Time: "5:00:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "Blues",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "BOAT COMMAND",
+          Time: "5:30:00 PM",
+          Venue: "THE ONE STOP",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "MODELFACE COMEDY",
+          Time: "5:30:00 PM",
+          Venue: "CITIZEN VINYL",
+          Genre: "Comedy",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "DJ BOBBY SPARKLES (PLAYS DIPLO)",
+          Time: "6:00:00 PM",
+          Venue: "THE OUTPOST (side stage)",
+          Genre: "Electronic/Dance",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "SHAKE RAG",
+          Time: "6:00:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (indoors)",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "PINK MERCURY",
+          Time: "6:00:00 PM",
+          Venue: "SALVAGE STATION (indoors)",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "HOT BREAD SELECTORS",
+          Time: "6:15:00 PM",
+          Venue: "NEW BELGIUM BREWING (beer garden)",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "HARVEY STREET",
+          Time: "6:30:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "EMILY EASTERLY",
+          Time: "6:30:00 PM",
+          Venue: "EULOGY",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "CALL THE NEXT WITNESS",
+          Time: "6:30:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "LIFE LIKE WATER",
+          Time: "6:30:00 PM",
+          Venue: "THE FUNKATORIUM",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "COLBY T HELMS & THE VIRGINIA CREEPERS",
+          Time: "6:30:00 PM",
+          Venue: "THE GREY EAGLE",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "GOLD ROSE",
+          Time: "6:30:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+          Genre: "Country",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "ASHLEY CHAMBLISS",
+          Time: "6:30:00 PM",
+          Venue: "JACK OF THE WOOD",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "DEREK STIPE + STILLWEATHER",
+          Time: "6:30:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "RANDALL BRAMBLETT & THE MEGA-BLASTERS",
+          Time: "6:30:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Rock/Soul",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "SUSTO",
+          Time: "6:30:00 PM",
+          Venue: "THE OUTPOST",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "JOHN KIRBY & THE NEW SENIORS",
+          Time: "6:30:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "JANE KRAMER",
+          Time: "6:30:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "FUN SIZE",
+          Time: "6:30:00 PM",
+          Venue: "SHILOH & GAINES",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "RIVER WHYLESS",
+          Time: "6:45:00 PM",
+          Venue: "NEW BELGIUM BREWING",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "CHILLTONIC",
+          Time: "7:00:00 PM",
+          Venue: "THE ONE STOP",
+          Genre: "Electronic/Chillout",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "LANGHORNE SLIM",
+          Time: "7:00:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (outdoors)",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "TRAP JAZZ",
+          Time: "7:00:00 PM",
+          Venue: "SALVAGE STATION (outdoors)",
+          Genre: "Jazz/Funk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "THE ODD'S PARTY FOUL",
+          Time: "7:00:00 PM",
+          Venue: "THE ODD",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "PLEASANTLY WILD",
+          Time: "8:00:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "WAGGING",
+          Time: "8:00:00 PM",
+          Venue: "EULOGY",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "JESSE VELVET",
+          Time: "8:00:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "THE KNOTTY G'S STRING BAND",
+          Time: "8:00:00 PM",
+          Venue: "THE FUNKATORIUM",
+          Genre: "Bluegrass/Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "DOC AQUATIC",
+          Time: "8:00:00 PM",
+          Venue: "THE GREY EAGLE",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "ANDREW SCOTCHIE",
+          Time: "8:00:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "DIRTY MCHANNAH BAND",
+          Time: "8:00:00 PM",
+          Venue: "JACK OF THE WOOD",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "MOON BRIDE",
+          Time: "8:00:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "KING LAZY EYE",
+          Time: "8:00:00 PM",
+          Venue: "THE ORANGE PEEL",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "FIFTY YEAR FLOOD",
+          Time: "8:00:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "FREE PLANET RADIO",
+          Time: "8:00:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "BLITZEN TRAPPER",
+          Time: "8:00:00 PM",
+          Venue: "THE OUTPOST",
+          Genre: "Indie Rock/Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "KARMA DOGS",
+          Time: "8:00:00 PM",
+          Venue: "SHILOH & GAINES",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "RICHARD BARRETT & FRIENDS",
+          Time: "8:15:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (indoors)",
+          Genre: "Jazz/Swing",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "LITZ",
+          Time: "8:15:00 PM",
+          Venue: "SALVAGE STATION (indoors)",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "SHED BUGS",
+          Time: "8:30:00 PM",
+          Venue: "THE ONE STOP",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "RUSS WILSON & HIS FAMOUS ORCHESTRA",
+          Time: "9:00:00 PM",
+          Venue: "THE CELLAR",
+          Genre: "Jazz/Swing",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "KELLE JOLLY & WILL BOYD",
+          Time: "9:00:00 PM",
+          Venue: "LITTLE JUMBO",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "ONE WORLD BREWING SATURDAY SESSIONS",
+          Time: "9:00:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "Various",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "BRETT DENNEN",
+          Time: "9:15:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (outdoors)",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "PAPADOSIO",
+          Time: "9:15:00 PM",
+          Venue: "SALVAGE STATION (outdoors)",
+          Genre: "Electronic/Jam Band",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "SECRET B-SIDES",
+          Time: "9:30:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "BASEMENT HEALER",
+          Time: "9:30:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "PLEASURE CHEST",
+          Time: "9:30:00 PM",
+          Venue: "THE FUNKATORIUM",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "FIRECRACKER JAZZ BAND",
+          Time: "9:30:00 PM",
+          Venue: "THE GREY EAGLE",
+          Genre: "Jazz/Swing",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "JULIA SANDERS",
+          Time: "9:30:00 PM",
+          Venue: "JACK OF THE WOOD",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "MIAMI GOLD",
+          Time: "9:30:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "SARAH SHOOK & THE DISARMERS",
+          Time: "9:30:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "THE BINS",
+          Time: "9:30:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "RESONANT ROGUES",
+          Time: "9:30:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Indie Folk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "C SHREVE HIP HOP SHOWCASE",
+          Time: "9:30:00 PM",
+          Venue: "EULOGY",
+          Genre: "Hip-Hop/Rap",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "BEACHWOOD SPARKS",
+          Time: "9:45:00 PM",
+          Venue: "THE OUTPOST",
+          Genre: "Indie Rock/Psychedelic",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "DJ MAD MIKE",
+          Time: "10:00:00 PM",
+          Venue: "THE ONE STOP",
+          Genre: "Electronic/Dance",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "QUEEN BEE & THE HONEYLOVERS",
+          Time: "10:00:00 PM",
+          Venue: "THE CELLAR",
+          Genre: "Swing/Jazz",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "SANCTUM SULLY",
+          Time: "10:30:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (indoors)",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "BRIAN FELIX ORGAN TRIO",
+          Time: "10:45:00 PM",
+          Venue: "LITTLE JUMBO",
+          Genre: "Jazz/Funk",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "CRYPTOWAVE",
+          Time: "10:45:00 PM",
+          Venue: "SALVAGE STATION (indoors)",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "POCKET STRANGE",
+          Time: "11:00:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "TIGHT",
+          Time: "11:00:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "BAM-A-LAM",
+          Time: "11:00:00 PM",
+          Venue: "JACK OF THE WOOD",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "MYXED MESSYNGERS",
+          Time: "11:00:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Hip-Hop/Rap",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "RUSS WILSON & HIS FAMOUS ORCHESTRA",
+          Time: "11:00:00 PM",
+          Venue: "THE CELLAR",
+          Genre: "Jazz/Swing",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "SOUND LOBOTOMY",
+          Time: "11:00:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "HANK WEST & THE SMOKIN HOTS",
+          Time: "11:00:00 PM",
+          Venue: "THE GREY EAGLE",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "WASHED OUT",
+          Time: "11:00:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Electronic/Chillwave",
+        },
+        {
+          Date: "8/3/2024",
+          Artist: "BLACK FLUFF DUO",
+          Time: "11:30:00 PM",
+          Venue: "THE ONE STOP",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "LINER NOTES: CURATED CONVERSATIONS W/AVLFEST ARTISTS",
+          Time: "1:30:00 PM",
+          Venue: "CITIZEN VINYL",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "PEGGY RATUZ",
+          Time: "2:00:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "ROOTS & DORE BAND",
+          Time: "2:00:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "DERIAN BLANE",
+          Time: "2:00:00 PM",
+          Venue: "THE OUTPOST (side stage)",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "EM & THE INNOCENT MISCHIEF",
+          Time: "2:00:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Indie Folk",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "KEITH HARRY",
+          Time: "2:00:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "ADAM CHASE & FRIENDS",
+          Time: "2:00:00 PM",
+          Venue: "SALVAGE STATION (indoors)",
+          Genre: "Bluegrass/Folk",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "ALMA RUSS",
+          Time: "2:00:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "ROCK ACADEMY SHOWCASE",
+          Time: "2:00:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+          Genre: "Various",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "KEVIN RUMLEY",
+          Time: "2:00:00 PM",
+          Venue: "THE GREY EAGLE",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "ANDREW THELSTON BAND",
+          Time: "2:00:00 PM",
+          Venue: "EULOGY",
+          Genre: "Rock/Indie Rock",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "SAYLOR BROTHERS",
+          Time: "2:00:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "LOCAL 604 BOTTLE SHOP ASHEVILLE SYNTH CLUB",
+          Time: "2:00:00 PM",
+          Venue: "THE ODD",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "JOSH STACK",
+          Time: "3:00:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "CHALWA",
+          Time: "3:00:00 PM",
+          Venue: "FRENCH BROAD RIVER BREWERY (indoors)",
+          Genre: "World Music/Reggae",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "JAY SANDERS NONET",
+          Time: "3:30:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Jazz/Swing",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "RYAN TAYLOR PRICE",
+          Time: "3:30:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "MCKINNEY (SOLO)",
+          Time: "3:30:00 PM",
+          Venue: "THE OUTPOST (side stage)",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "RAINY EYES",
+          Time: "3:30:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "THE MOON & YOU",
+          Time: "3:30:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Indie Folk",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "JOSH CLARK'S VISIBLE SPECTRUM",
+          Time: "3:30:00 PM",
+          Venue: "SALVAGE STATION (indoors)",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "BARRETT DAVIS",
+          Time: "3:30:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "DETECTIVE BLIND",
+          Time: "3:30:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "IVY ELD",
+          Time: "3:30:00 PM",
+          Venue: "THE GREY EAGLE",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "DAIKAIJU",
+          Time: "3:30:00 PM",
+          Venue: "EULOGY",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "SONGS FROM THE ROAD BAND",
+          Time: "3:30:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "DAVE DESMELIK",
+          Time: "4:00:00 PM",
+          Venue: "CITIZEN VINYL",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "KEEP FLYING",
+          Time: "4:30:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "DARREN NICHOLSON",
+          Time: "5:00:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "NICK & BREW",
+          Time: "5:00:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "OPTION 22",
+          Time: "5:00:00 PM",
+          Venue: "THE OUTPOST (side stage)",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "DYLAN LEBLANC",
+          Time: "5:00:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "WE ARE ANTS TO THEM",
+          Time: "5:00:00 PM",
+          Venue: "THE ODD",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "CANON TYLER",
+          Time: "5:00:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "CIGARETTES @ SUNSET",
+          Time: "5:00:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "TOYBOX THEATRE",
+          Time: "5:00:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+          Genre: "Experimental/Avant-Garde",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "PALMYRA",
+          Time: "5:00:00 PM",
+          Venue: "THE GREY EAGLE",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "GET RIGHT BAND",
+          Time: "5:00:00 PM",
+          Venue: "EULOGY",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "ALLGORHYTHMS",
+          Time: "5:00:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Electronic/Experimental",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "E'LON JD",
+          Time: "5:00:00 PM",
+          Venue: "SALVAGE STATION (indoors)",
+          Genre: "Hip-Hop/Rap",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "REASONABLY PRICED BABIES",
+          Time: "5:30:00 PM",
+          Venue: "CITIZEN VINYL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "THE PINKERTON RAID",
+          Time: "6:00:00 PM",
+          Venue: "FLEETWOOD'S",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "MALCOLM HOLCOMBE TRIBUTE",
+          Time: "6:30:00 PM",
+          Venue: "WORTHAM CENTER FOR THE PERFORMING ARTS",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "CARPAL TULLAR",
+          Time: "6:30:00 PM",
+          Venue: "THE SOCIAL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "CHRISTINA CHANDLER",
+          Time: "6:30:00 PM",
+          Venue: "THE OUTPOST (side stage)",
+          Genre: "Singer-Songwriter/Folk",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "EAST COAST DIRT",
+          Time: "6:30:00 PM",
+          Venue: "SOVEREIGN KAVA",
+          Genre: "Country/Americana",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "FRITZ & CO",
+          Time: "6:30:00 PM",
+          Venue: "ONE WORLD BREWING",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "SECRET AGENT 23 SKIDOO",
+          Time: "6:30:00 PM",
+          Venue: "HIGHLAND BREWING CO.",
+          Genre: "Hip-Hop/Rap",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "YARN",
+          Time: "6:30:00 PM",
+          Venue: "THE GREY EAGLE",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "BASK",
+          Time: "6:30:00 PM",
+          Venue: "EULOGY",
+          Genre: "Post-Rock/Instrumental",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "THE SNOZZBERRIES",
+          Time: "6:30:00 PM",
+          Venue: "ASHEVILLE MUSIC HALL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "LURKY SKUNK",
+          Time: "6:30:00 PM",
+          Venue: "THE ODD",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "THE HEAVY HEAVY",
+          Time: "6:45:00 PM",
+          Venue: "THE ORANGE PEEL",
+          Genre: "Indie Rock",
+        },
+        {
+          Date: "8/4/2024",
+          Artist: "JEFF SIPE TRIO",
+          Time: "6:45:00 PM",
+          Venue: "SALVAGE STATION (indoors)",
+          Genre: "Jazz/Funk",
+        },
+      ];
     </script>
   </body>
 </html>
